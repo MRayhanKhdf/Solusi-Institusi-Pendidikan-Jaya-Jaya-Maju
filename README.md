@@ -116,7 +116,7 @@ Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Se
 - run code : streamlit run streamlit_status_prediksi.py
 
 Jika ingin membuka tidak secara lokal, dapat diakses melalui link dibawah ini:
-
+https://prediksi-do.streamlit.app/
 
 ## Conclusion
 
