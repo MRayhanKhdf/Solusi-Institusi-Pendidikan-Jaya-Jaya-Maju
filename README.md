@@ -125,18 +125,17 @@ https://prediksi-do.streamlit.app/
 ## Conclusion
 
 
-Berdasarkan hasil analisis dan pemodelan:
-    - Mahasiswa yang berpotensi dropout umumnya memiliki ciri Nilai rendah atau tidak ada nilai sama sekali (0) pada fitur semester seperti:
-        - Curricular_units_1st_sem_approved
-        - Curricular_units_1st_sem_grade
-        - Curricular_units_2nd_sem_approved
-        - Curricular_units_2nd_sem_grade
-        - Tidak melakukan pembayaran biaya kuliah tepat waktu (Tuition_fees_up_to_date = 0).
-    - Hal ini menunjukkan bahwa faktor akademik (nilai & evaluasi) dan sosial-ekonomi (status pembayaran) menjadi penentu dominan dalam risiko dropout.
-    - Model prediktif Extra Trees mampu mengklasifikasikan status mahasiswa dengan akurasi yang cukup baik dan menunjukkan fitur-fitur tersebut sebagai faktor penting.
-    - Sistem prediksi ini dapat digunakan sebagai alat bantu pengambilan keputusan akademik, misalnya:
-        - Memberikan intervensi awal pada mahasiswa dengan performa akademik rendah.
-        - Memberikan perhatian khusus kepada mahasiswa yang memiliki kendala dalam pembayaran.
+Berdasarkan hasil analisis dan pemodelan, mahasiswa yang berpotensi dropout umumnya memiliki ciri Nilai rendah atau tidak ada nilai sama sekali (0) pada fitur semester seperti:
+    - Curricular_units_1st_sem_approved
+    - Curricular_units_1st_sem_grade
+    - Curricular_units_2nd_sem_approved
+    - Curricular_units_2nd_sem_grade
+    - Tidak melakukan pembayaran biaya kuliah tepat waktu (Tuition_fees_up_to_date = 0).
+Hal ini menunjukkan bahwa faktor akademik (nilai & evaluasi) dan sosial-ekonomi (status pembayaran) menjadi penentu dominan dalam risiko dropout.
+Model prediktif Extra Trees mampu mengklasifikasikan status mahasiswa dengan akurasi yang cukup baik dan menunjukkan fitur-fitur tersebut sebagai faktor penting.
+Sistem prediksi ini dapat digunakan sebagai alat bantu pengambilan keputusan akademik, misalnya:
+    - Memberikan intervensi awal pada mahasiswa dengan performa akademik rendah.
+    - Memberikan perhatian khusus kepada mahasiswa yang memiliki kendala dalam pembayaran.
 Dengan implementasi sistem ini, Jaya Jaya Institut dapat menurunkan angka dropout secara signifikan serta menjaga reputasi institusi di mata publik dan regulator pendidikan.
 
 
