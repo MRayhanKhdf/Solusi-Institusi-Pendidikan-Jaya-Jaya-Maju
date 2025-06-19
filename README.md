@@ -10,7 +10,11 @@ Sebagai calon data scientist masa depan, kita diminta untuk membantu Jaya Jaya I
 
 ### Permasalahan Bisnis
 
-Jaya Jaya Institut menghadapi masalah jumlah dropout yang cukup tinggi. Hal ini berdampak negatif terhadap reputasi dan efektivitas institusi. Manajemen ingin mengetahui **faktor-faktor penting** yang menyebabkan dropout serta membangun **sistem prediksi status mahasiswa** secara akurat.
+Jaya Jaya Institut menghadapi tantangan serius dalam hal tingginya angka mahasiswa dropout yang berpotensi mengganggu reputasi akademik, akreditasi, serta efisiensi proses pembelajaran. Institusi kesulitan dalam:
+- Mengidentifikasi faktor utama yang mendorong mahasiswa untuk berhenti studi di tengah jalan.
+- Tidak adanya sistem prediksi berbasis data yang dapat memberikan peringatan dini bagi mahasiswa yang berisiko tinggi dropout.
+- Kesulitan dalam monitoring performa akademik mahasiswa secara real-time dan menyeluruh dari sisi akademik dan sosial.
+Oleh karena itu, institusi memerlukan pendekatan analitik dan sistem machine learning untuk membantu pengambilan keputusan yang berbasis data.
 
 ### Cakupan Proyek
 
@@ -120,9 +124,20 @@ https://prediksi-do.streamlit.app/
 
 ## Conclusion
 
-- Mayoritas murid yang dropout dikarenakan nilai per semester yang kecil/nihil yang mengakibatkaan persetujuan semester tidak didapatkan, dan biaya tidak dibayar sesuai jadwal.
-- Fitur nilai dan persetujuan per semester menjadi indikator kuat terhadap kemungkinan dropout.
-- Model prediktif dapat digunakan untuk mengidentifikasi murid berisiko tinggi dan melakukan intervensi lebih awal.
+    - Mahasiswa yang berpotensi dropout umumnya memiliki ciri Nilai rendah atau tidak ada nilai sama sekali (0) pada fitur semester seperti:
+        - Curricular_units_1st_sem_approved
+        - Curricular_units_1st_sem_grade
+        - Curricular_units_2nd_sem_approved
+        - Curricular_units_2nd_sem_grade
+        - Tidak melakukan pembayaran biaya kuliah tepat waktu (Tuition_fees_up_to_date = 0).
+
+    - Hal ini menunjukkan bahwa faktor akademik (nilai & evaluasi) dan sosial-ekonomi (status pembayaran) menjadi penentu dominan dalam risiko dropout.
+    - Model prediktif Extra Trees mampu mengklasifikasikan status mahasiswa dengan akurasi yang cukup baik dan menunjukkan fitur-fitur tersebut sebagai faktor penting.
+    - Sistem prediksi ini dapat digunakan sebagai alat bantu pengambilan keputusan akademik, misalnya:
+        - Memberikan intervensi awal pada mahasiswa dengan performa akademik rendah.
+        - Memberikan perhatian khusus kepada mahasiswa yang memiliki kendala dalam pembayaran.
+Dengan implementasi sistem ini, Jaya Jaya Institut dapat menurunkan angka dropout secara signifikan serta menjaga reputasi institusi di mata publik dan regulator pendidikan.
+
 
 ### Rekomendasi Action Items (Optional)
 
