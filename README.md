@@ -47,9 +47,6 @@ source venv/bin/activate
 # Menginstal Dependensi dari requirements.txt
 pip install -r requirements.txt
 
-# Menjalankan aplikasi streamlit
-streamlit run streamlit_status_prediksi.py
-
 ## Data Understanding
 Mengenali isi deskripsi data, nilai unik status, jumlah data missing, dan tahap EDA serta visualisasi data.
 
@@ -112,6 +109,15 @@ Dashboard dibuat menggunakan **Looker Studio** dengan sumber dari CSV. Visualisa
 
 https://lookerstudio.google.com/reporting/fd80c313-6bea-4325-8f22-1a5209129af1
 
+## Menjalankan Sistem Machine Learning
+Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
+### Menjalankan aplikasi streamlit secara lokal
+- Buka terminal
+- run code : streamlit run streamlit_status_prediksi.py
+
+Jika ingin membuka tidak secara lokal, dapat diakses melalui link dibawah ini:
+
+
 ## Conclusion
 
 - Mayoritas murid yang dropout dikarenakan nilai per semester yang kecil/nihil yang mengakibatkaan persetujuan semester tidak didapatkan, dan biaya tidak dibayar sesuai jadwal.
@@ -120,6 +126,7 @@ https://lookerstudio.google.com/reporting/fd80c313-6bea-4325-8f22-1a5209129af1
 
 ### Rekomendasi Action Items (Optional)
 
-1. Memberikan intervensi pada murid yang mendapatkan nilai rendah dalam semester mereka
-2. Mencari tahu alasan belum membayar biaya dan memberikan keringanan secara case-by-case yang masuk akal untuk murid.
-3. Menawarkan program kelas tambahan untuk murid yang nilai rendah atau kelas susulan jika murid tidak selesai tepat waktu.
+1. Dikarenakan nilai `Curricular_units_1st_sem_approved,Curricular_units_1st_sem_grade`, `Curricular_units_1st_sem_approved`
+`Curricular_units_2nd_sem_approved`, `Curricular_units_2nd_sem_grade`, `Curricular_units_2nd_sem_approved`, `Curricular_units_2nd_sem_grade`, dan `Curricular_units_2nd_sem_approved`, maka hal ini berarti nilai per semester murid ada yang rendah/nihil yang mempengaruhi nilai DO dari murid. Oleh karena itu sebaiknya Memberikan intervensi pada murid yang mendapatkan nilai rendah dalam semester mereka, bisa dengan menawarkan program kelas tambahan untuk murid yang nilai rendah atau kelas susulan jika murid nilainya kosong.
+2. Dikarenakan nilai `Tuition_fees_up_to_date`, hal itu mempengaruhi murid dikarenakan tidak sempat membayar biaya pendidikan tepat waktu yang mengakibatkan murid terkena DO. Oleh karena itu sebaiknya untuk mecegah DO karena telat membayar biaya, harus dicari tahu alasan belum membayar biaya dan memberikan keringanan secara case-by-case yang masuk akal untuk murid.
+
